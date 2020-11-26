@@ -2,6 +2,17 @@
 #include <SPI.h>
 #include <mcp2515.h>
 
+/*
+MCP2515 Module  -> Arduino
+VCC             -> +5V
+GND             -> GND
+CS              -> 10 (SPI_SS)
+SO              -> 12 (SPI_MISO)
+SI              -> 11 (SPI_MOSI)
+SCK             -> 13 (SPI_SCK)
+INT             -> 2
+*/
+
 struct can_frame canMsg;
 MCP2515 mcp2515(10);
 
